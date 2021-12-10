@@ -1,0 +1,112 @@
+.time_display {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #b0b5a5;
+  margin: 50px auto;
+  background: rgb(12, 6, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  z-index: 5;
+}
+.h {
+  width: 5px;
+  height: 60px;
+  background: rgb(220, 213, 228);
+  transform-origin: top;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.m {
+  width: 5px;
+  height: 70px;
+  background: rgb(247, 240, 234);
+  transform-origin: top;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+.s {
+  width: 1px;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  transform-origin: top;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+.center_point {
+  width: 10px;
+  background: rgb(224, 209, 209);
+  height: 10px;
+  border-radius: 50%;
+  z-index: 555;
+}
+.scale_top {
+  width: 2px;
+  height: 10px;
+  background: aliceblue;
+  position: absolute;
+  top: 0;
+}
+.scale_bottom {
+  width: 2px;
+  height: 10px;
+  background: aliceblue;
+  position: absolute;
+  bottom: 0;
+}
+.scale_left {
+  width: 2px;
+  height: 10px;
+  background: aliceblue;
+  position: absolute;
+  left: 4px;
+  transform: rotate(90deg);
+}
+.scale_right {
+  width: 2px;
+  height: 10px;
+  background: aliceblue;
+  position: absolute;
+  right: 4px;
+  transform: rotate(90deg);
+}
+#week {
+  color: aliceblue;
+  position: absolute;
+  bottom: 30px;
+}
+.pendulum {
+  width: 2px;
+  height: 200px;
+  background: rgb(112, 122, 122);
+  margin: 0 auto;
+  /* transform: rotate(45deg); */
+  transform-origin: top;
+  transition: all 1s ease-in-out;
+  position: relative;
+  margin-top: -120px;
+}
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(150, 164, 177);
+  bottom: 0;
+  left: -25px;
+}
